@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="fbApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>制作名片</title>
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/makecard.css" />
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="controller/fbController.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body ng-controller="fbCtrl">
+		<div ng-include="urlcotop"></div>
+
+		<section class="section1">
+			<img style="width: 100%;height: auto;" src="img/makecard_banner.jpg" alt="" />
+		</section>
+		
+		<section class="section2">
+			<div class="box">
+				<div class="first">
+					
+					<p class="title">第一步：制作名片</p>
+					
+					<div class="sub">
+						<input class="name" type="text" name="name" placeholder="请输入您的姓名" />
+						<input class="tel" type="tel" name="tel" placeholder="请输入手机号"/>
+						<input class="wechat" type="text" name="wechat" placeholder="请输入微信号" />
+						<input class="QQ" type="text" name="qq" placeholder="请输入Q Q号" />
+						<input class="address" type="text" name="address" placeholder="请输入您的地址" />
+						<button class="preview">预览名片</button>
+					</div>
+					
+					<div class="sub2">
+						<div class="subbox active">
+							<div class="num"><img src="img/card_01.png"/></div>
+							<div class="img"><img src="img/cardone-1.png"/></div>
+							<div class="img"><img src="img/cardone-2.png"/></div>
+						</div>
+						<div class="subbox">
+							<div class="num"><img src="img/card_02.png"/></div>
+							<div class="img"><img src="img/cardtwo-1.png"/></div>
+							<div class="img"><img src="img/cardtwo-2.png"/></div>
+						</div>
+						<div class="subbox">
+							<div class="num"><img src="img/card_03.png"/></div>
+							<div class="img"><img src="img/cardthree-1.png"/></div>
+							<div class="img"><img src="img/cardthree-2.png"/></div>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+				<div class="second">
+					<p class="title">第二步：名片模板选择</p>
+					<div class="sub sub1">
+						<div class="img activeimg"><img src="img/cardonelarge-1.png" alt="" /></div>
+						<div class="img"><img src="img/cardtwolarge-1.jpg" alt="" /></div>
+						<div class="img"><img src="img/cardthreelarge-1.jpg" alt="" /></div>
+						<button>下载正面</button>
+					</div>
+					<div class="sub sub2">
+						<div class="img activeimg"><img src="img/cardonelarge-2.png" alt="" /></div>
+						<div class="img"><img src="img/cardtwolarge-2.jpg" alt="" /></div>
+						<div class="img"><img src="img/cardthreelarge-2.jpg" alt="" /></div>
+						<button>下载反面</button>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</section>
+
+		<div ng-include="urlfooter"></div>
+
+	
+	</body>
+	
+	<script type="text/javascript">
+		$('.section2 .first .sub2 .subbox').click(function(){
+			$(this).siblings('.subbox').removeClass('active').end().addClass('active');
+
+		});
+		//预览名片
+		$('.preview').click(function(){
+			
+			var n = $('.active').index();
+			var d_img = $('.second .img')
+//			console.log(n);
+//			debugger;
+//			console.log(d_img)
+			d_img.siblings('.img').hide();
+			d_img.eq(n).show();
+			d_img.eq(n+3).show();
+			
+		});
+
+	</script>
+
+</html>

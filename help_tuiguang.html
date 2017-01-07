@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="fbApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>帮助-推广</title>
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/help_tuiguang.css" />
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="controller/fbController.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body ng-controller="fbCtrl">
+		<div ng-include="urltop"></div>
+
+		<section class="section1" style="border: none;">
+			<img style="width: 100%;height: auto;" src="img/help_banner.jpg" alt="" />
+		</section>
+		<section class="section2">
+			<div class="box">
+				<h2>风暴教程</h2>
+				<div class="line"></div>
+				<div class="title">
+					<a href="help_zhushou.html">风暴装机助手</a>/
+					<a href="help_hezi.html">风暴装机盒子</a>/
+					<a class="active" href="help_tuiguang.html">风暴在线推广</a>
+				</div>
+				<div class="sub">
+					<div class="title">在线推广教程</div>
+					<ul>
+						<li>
+							<span>1</span>
+							<p>在风暴产品中心下载统计组件LmService.apk和需要的推广APP安装包。</p>
+							<img src="img/rom1.png"/>
+						</li>
+						<li>
+							<span>2</span>
+							<p>先将下载统计组件LmService.apk内置于system/app目录下 ，否则无法计费。</p>
+							<img  src="img/rom2.png"/>
+						</li>
+						<li>
+							<span>3</span>
+							<p>再将下载的推广APP放在 data/app或者system/app目录下。（注:data/app目录下APP用户可自行卸载，system/app目录下用户无法卸载。）</p>
+							<img  src="img/rom3.png"/>
+						</li>
+						<li>
+							<span>4</span>
+							<p>内置推广APP完成。不同的APP有不同的激活规则，详情请看介绍页。</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		
+
+		<div ng-include="urlfooter"></div>
+	</body>
+
+</html>

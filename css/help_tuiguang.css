@@ -1,0 +1,58 @@
+@charset "utf-8";
+.section2 {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.section2 .box {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.section2 .box .line {
+  width: 50px;
+  margin: 10px auto 30px;
+}
+.section2 .box > .title .active {
+  color: #ECAA27;
+}
+.section2 .box .sub {
+  text-align: left;
+  margin-top: 70px;
+}
+.section2 .box .sub .title {
+  display: inline-block;
+  color: #fff;
+  background: #ECAA27;
+  padding: 10px 25px;
+  font-size: 24px;
+}
+.section2 .box .sub ul li {
+  margin-top: 30px;
+}
+.section2 .box .sub ul li span {
+  display: inline-block;
+  float: left;
+  width: 26px;
+  height: 26px;
+  background: #ECAA27;
+  line-height: 26px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.section2 .box .sub ul li p {
+  padding-left: 50px;
+  line-height: 1.5;
+}
+.section2 .box .sub ul li img {
+  padding-left: 24px;
+  margin-top: 20px;
+  width: 720px;
+  height: auto;
+}
+.section2 .box .sub ul .notice {
+  font-size: 16px;
+  color: #ff0000;
+  padding-left: 50px;
+}

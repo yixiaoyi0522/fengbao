@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="fbApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>帮助中心-盒子</title>
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/help_tuiguang.css" />
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="controller/fbController.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body ng-controller="fbCtrl">
+		<div ng-include="urltop"></div>
+
+		<section class="section1" style="border: none;">
+			<img style="width: 100%;height: auto;" src="img/help_banner.jpg" alt="" />
+		</section>
+		<section class="section2">
+			<div class="box">
+				<h2>风暴教程</h2>
+				<div class="line"></div>
+				<div class="title">
+					<a href="help_zhushou.html">风暴装机助手</a>/
+					<a class="active" href="help_hezi.html">风暴装机盒子</a>/
+					<a href="help_tuiguang.html">风暴在线推广</a>
+				</div>
+				<div class="sub">
+					<div class="title">盒子教程</div>
+					<ul>
+						<li>
+							<span>1</span>
+							<p>首先将盒子的取出，将电源线与网线连接上盒子的相应接口，网线必须能联网。</p>
+							<img src="img/box1.jpg"/>
+						</li>
+						<li>
+							<span>2</span>
+							<p>待指示灯亮灯后将需要装app的手机用数据线连接到盒子上（USB数据线请自备），最多可支持4台手机同时安装。此时手机应处于未锁屏状态，并注意手机屏幕若弹出请求调试许可，选择允许调试。</p>
+							<img src="img/box2.jpg"/>
+						</li>
+						<li>
+							<span>3</span>
+							<p>开始安装，请注意手机屏幕上的安装进度，安装过程中显示为黄色，安装完成后为绿色且有安装完成提示，本过程为全自动安装，安装过程中请勿操作手机，以免导致app安装失败。</p>
+							<img src="img/box3.jpg"/>
+						</li>
+						<li>
+							<span>4</span>
+							<p>安装完成，待安装界面显示完成后方可拔下手机或数据线。</p>
+							<img src="img/box4.jpg"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		
+
+		<div ng-include="urlfooter"></div>
+	</body>
+
+</html>

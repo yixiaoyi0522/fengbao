@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="fbApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>帮助中心-助手</title>
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/help_tuiguang.css" />
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="controller/fbController.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body ng-controller="fbCtrl">
+		<div ng-include="urltop"></div>
+
+		<section class="section1" style="border: none;">
+			<img style="width: 100%;height: auto;" src="img/help_banner.jpg" alt="" />
+		</section>
+		<section class="section2">
+			<div class="box">
+				<h2>风暴教程</h2>
+				<div class="line"></div>
+				<div class="title">
+					<a class="active" href="help_zhushou.html">风暴装机助手</a>/
+					<a href="help_hezi.html">风暴装机盒子</a>/
+					<a href="help_tuiguang.html">风暴在线推广</a>
+				</div>
+				<div class="sub">
+					<div class="title">装机助手教程</div>
+					<ul>
+						<li>
+							<span>1</span>
+							<p>下载风暴pc助手并安装，建议安装到默认位置，直接点击下一步即可。</p>
+							<img src="img/zhuangji1.png"/>
+						</li>
+						<li>
+							<span>2</span>
+							<p>打开位于桌面的风暴pc助手快捷方式 。（桌面上找不到的话也可以去文件夹位置C:\Program Files (x86)\风暴PC助手，执行pchelper.exe程序。）</p>
+							<img src="img/zhuangji2.png"/>
+						</li>
+						<li>
+							<span>3</span>
+							<p>在登录页面输入平台所提供的账号和密码登录。</p>
+							<img src="img/zhuangji3.png"/>
+						</li>
+						<li>
+							<span>4</span>
+							<p>进入到软件界面后点击加号图标 添加套餐，选择完毕后点击保存。</p>
+							<img src="img/zhuangji4.png"/>
+						</li>
+						<li>
+							<span>5</span>
+							<p>套餐选择设置完毕后勾选上右上方“选中后自动安装“选项，然后用usb数据线连接手机和电脑，此时手机界面可能申请调试权限，点击允许，开始安装。 （注意：安装执行的为当前选择套餐，支持多部手机同时安装。）</p>
+						</li>
+						<li>
+							<span>6</span>
+							<p>安装完成。（注意：安装时为黄色，安装完成后变为绿色，在手机上也可以查看软件安装进度。）</p>
+							<img src="img/zhuangji5.png"/>
+						</li>
+						<li class="notice">注意：此时手机可能会提示启用applist组件获取使用量信息，自动选择允许。可忽略</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		
+
+		<div ng-include="urlfooter"></div>
+	</body>
+
+</html>

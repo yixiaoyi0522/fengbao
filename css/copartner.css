@@ -1,0 +1,281 @@
+@charset "utf-8";
+.section2 {
+  padding: 60px 0;
+}
+.section2 .box {
+  width: 1100px;
+  margin: 0 auto;
+}
+.section2 .box h2 {
+  font-size: 36px;
+  margin-bottom: 17px;
+}
+.section2 .box > p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.section2 .box .sub {
+  margin-top: 90px;
+}
+.section2 .box .sub .subbox {
+  position: relative;
+  margin-top: 90px;
+}
+.section2 .box .sub .subbox img {
+  display: block;
+  float: left;
+}
+.section2 .box .sub .subbox .text {
+  float: left;
+  width: 730px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.section2 .box .sub .subbox1 p {
+  margin-left: 25px;
+}
+.section2 .box .sub .subbox1 .img {
+  width: 247px;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.section2 .box .sub .subbox2 .img_02 {
+  float: right;
+  margin-right: 10px;
+}
+.section2 .box .sub .subbox2 .text {
+  float: right;
+  margin-right: 35px;
+  text-align: right;
+}
+.section2 .box .sub .subbox2 .img {
+  width: 174px;
+  height: 140px;
+}
+.section2 .box .sub .subbox3 p {
+  margin-left: 25px;
+}
+.section2 .box .sub .subbox3 .img {
+  width: 187px;
+  height: 158px;
+  float: right;
+  margin-right: 10px;
+}
+.section3 {
+  background: #f6f6f6;
+  padding: 60px 0;
+  text-align: center;
+}
+.section3 .box {
+  width: 1100px;
+  margin: 0 auto;
+}
+.section3 .box h2 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+.section3 .box > p {
+  font-size: 16px;
+}
+.section3 .box .sub {
+  margin-top: 80px;
+}
+.section3 .box .sub .subbox {
+  display: inline-block;
+  width: 540px;
+  height: 100px;
+  border: 1px solid #ECAA27;
+  border-radius: 50px;
+}
+.section3 .box .sub .subbox .img {
+  float: left;
+  margin-left: 8px;
+  height: 100px;
+}
+.section3 .box .sub .subbox .img img {
+  padding-top: 5px;
+}
+.section3 .box .sub .subbox .text {
+  float: left;
+  padding: 25px 20px;
+}
+.section3 .box .sub .subbox .text p {
+  font-size: 16px;
+}
+.section3 .box .sub .subbox .text .title {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+.section4 {
+  padding: 60px 0;
+  text-align: center;
+}
+.section4 .box {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section4 .box h2 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+.section4 .box > p {
+  font-size: 16px;
+}
+.section4 .box .sub {
+  margin-top: 80px;
+}
+.section4 .box .sub .subbox {
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 70px;
+  display: inline-block;
+  width: 540px;
+  height: 100px;
+}
+.section4 .box .sub .subbox .img {
+  float: left;
+}
+.section4 .box .sub .subbox .text {
+  float: left;
+  margin-left: 30px;
+  width: 400px;
+}
+.section4 .box .sub .subbox .text p {
+  font-size: 16px;
+}
+.section4 .box .sub .subbox .text .title {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 17px;
+}
+.section5 {
+  padding: 60px 0;
+  text-align: center;
+  background: #F6F6F6;
+}
+.section5 .box {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section5 .box h2 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+.section5 .box > p {
+  font-size: 16px;
+}
+.section5 .box .sub {
+  margin-top: 80px;
+}
+.section5 .box .sub .subbox {
+  border-bottom: 2px solid #ECAA27;
+  text-align: left;
+  margin-left: 30px;
+  width: 360px;
+  display: inline-block;
+}
+.section5 .box .sub .subbox .img {
+  text-align: center;
+  background: #e5e5e5;
+  padding-top: 40px;
+}
+.section5 .box .sub .subbox .text {
+  background: #fff;
+  padding-top: 17px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+}
+.section5 .box .sub .subbox .text .title {
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+.section5 .box .sub .subbox .text .txt {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.section6 {
+  padding: 60px 0;
+  text-align: center;
+}
+.section6 .box {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section6 .box h2 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+.section6 .box .sub {
+  margin-top: 60px;
+}
+.section7 {
+  padding-bottom: 60px;
+  text-align: center;
+}
+.section7 .box {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section7 .box > h2 {
+  font-size: 32px;
+}
+.section7 .box > p {
+  font-size: 16px;
+  margin-top: 27px;
+  margin-bottom: 40px;
+}
+.section7 .box .tab .personal {
+  display: none;
+}
+.section7 .box .tab ul {
+  margin-bottom: 40px;
+}
+.section7 .box .tab li {
+  font-size: 22px;
+  display: inline-block;
+  padding: 0 10px;
+}
+.section7 .box .tab li.active {
+  color: #ECAA27;
+}
+.section7 .box .tab input {
+  width: 520px;
+  height: 56px;
+  border: 1px solid #b0b0b0;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 16px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 16px;
+}
+.section7 .box .tab .city select {
+  width: 160px;
+  height: 56px;
+  border: 1px solid #b0b0b0;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 16px;
+  margin-right: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 16px;
+}
+.section7 .box .tab button {
+  width: 260px;
+  height: 56px;
+  border: none;
+  background: #ECAA27;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 10px;
+  margin-bottom: 55px;
+}
+.section7 .box .tab > p {
+  font-size: 18px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>404</title>
+		<link rel="icon" href="img/favicon.ico" />
+	</head>
+
+	<body style="text-align: center;">
+		<a href="index.html">
+			<img src="img/404.png" />
+
+		</a>
+		<p style="position: relative;top: -150px;">
+			啊哦，你好像迷路了！别担心，还有 <span id="mytime">6</span> 秒自动返回首页！
+		</p>
+	</body>
+
+	<script type="text/javascript">
+		function runtime() {
+//			debugger;
+			document.getElementById("mytime").innerHTML = document.getElementById("mytime").innerHTML - 1;
+			if(document.getElementById("mytime").innerHTML <= 0) {
+				document.getElementById("mytime").innerHTML = 0
+					              location.href = 'index.html';
+
+			}
+			setTimeout("runtime()", 1000);
+		}
+		runtime();
+	</script>
+
+</html>

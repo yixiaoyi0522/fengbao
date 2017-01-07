@@ -1,0 +1,131 @@
+@charset "utf-8";
+.section2 {
+  padding: 60px 0;
+  text-align: center;
+}
+.section2 .box {
+  width: 1100px;
+  margin: 0 auto;
+}
+.section2 .box h2 {
+  font-size: 28px;
+  line-height: 1.5;
+}
+.section2 .box .sub {
+  margin-top: 90px;
+  text-align: left;
+}
+.section2 .box .sub .subbox p.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.section2 .box .sub .subbox p.en {
+  font-size: 18px;
+}
+.section2 .box .sub .subbox .line {
+  width: 60px;
+  margin: 16px 0 0;
+}
+.section2 .box .sub .subbox .text {
+  border-top: 2px solid #e5e5e5;
+  padding: 40px 0;
+}
+.section2 .box .sub .subbox .text p {
+  display: inline-block;
+  margin-top: 30px;
+}
+.section2 .box .sub .subbox .text p:not(.last) {
+  margin-left: 120px;
+}
+.section3 {
+  padding: 60px 0;
+  text-align: center;
+  background: #f6f6f6;
+}
+.section3 .box {
+  width: 1100px;
+  margin: 0 auto;
+}
+.section3 .box h2 {
+  font-size: 28px;
+  line-height: 1.5;
+}
+.section3 .box .sub {
+  margin-top: 90px;
+  text-align: left;
+}
+.section3 .box .sub .subbox {
+  background: #fff;
+  padding: 34px 20px;
+  float: left;
+  width: 500px;
+  height: 300px;
+}
+.section3 .box .sub .subbox2 {
+  border-left: 1px solid #ececec;
+}
+.section3 .box .sub .line {
+  margin: 20px 0 0;
+  height: 2px;
+  width: 500px;
+}
+.section3 .box .sub .text {
+  width: 500px;
+  padding: 0 40px 0 0;
+  box-sizing: border-box;
+}
+.section3 .box .sub .text li {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.section4 {
+  padding: 60px 0;
+  text-align: center;
+}
+.section4 .box {
+  width: 1100px;
+  margin: 0 auto;
+}
+.section4 .box h2 {
+  font-size: 32px;
+  margin-bottom: 55px;
+}
+.section5 {
+  padding: 60px 0 20px 0;
+  text-align: center;
+  background: #f6f6f6;
+}
+.section5 .box {
+  width: 1100px;
+  margin: 0 auto;
+}
+.section5 .box h2 {
+  font-size: 32px;
+  margin-bottom: 23px;
+}
+.section5 .box > p {
+  font-size: 16px;
+}
+.section5 .box .sub {
+  margin-top: 70px;
+}
+.section5 .box .sub .subbox {
+  border-left: 3px solid #ECAA27;
+  padding-left: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  width: 50%;
+  float: left;
+  margin-bottom: 65px;
+}
+.section5 .box .sub .subbox p {
+  font-size: 16px;
+}
+.section5 .box .sub .subbox p.title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.section5 .box .sub .subbox p.title span.example {
+  font-size: 16px;
+}

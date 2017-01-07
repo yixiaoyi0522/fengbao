@@ -1,0 +1,113 @@
+@charset "utf-8";
+.section2 {
+    position: relative;
+    top: -5px;
+    background: #f6f6f6;
+    overflow: hidden;
+    padding: 100px 0;
+    .box {
+        display: table;
+        width: 1100px;
+        margin: 0 auto;
+        .left {
+            float: left;
+        }
+        .right {
+            margin-top: 150px;
+            display: table-cell;
+            float: right;
+            
+            h2 {
+                font-size: 32px;
+            }
+            >p {
+                font-size: 18px;
+                margin-top: 20px;
+                span {
+                    color: #FF0000;
+                    a {
+                        color: #FF0000;
+                    }
+                }
+            }
+            .text {
+                width: 300px;
+                height: 140px;
+                margin-top: 40px;
+                color: #fff;
+                background: #ECAA27;
+                text-align: center;
+                vertical-align: middle;
+                padding-top: 40px;
+//              margin-left: 20px;
+                box-sizing: border-box;
+                p {
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.section3 {
+    border-top: 1px solid #bfbfbf;
+    padding: 60px 0 100px;
+    text-align: center;
+    .box {
+        width: 1100px;
+        margin: 0 auto;
+        h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        .tab {
+            span {
+                margin-left: 25px;
+                padding: 10px 0;
+                font-size: 18px;
+            }
+            .active {
+                color: #ECAA27;
+                border-bottom: 2px solid #ECAA27;
+            }
+        }
+        
+        .content {
+            display: none;
+            text-align: left;
+            margin-top: 40px;
+            .sub {
+                margin-top: 60px;
+                text-align: left;
+                width: 530px;
+                display: inline-block;
+                .line {
+                    width: 40px;
+                    margin: 10px 0;
+                }
+                .subContent {
+                    margin-top: 24px;
+                    background: #f6f6f6;
+                    padding: 35px 40px;
+                    ul {
+                        li {
+                            width: 190px;
+                            margin: 2px 0;
+                            font-size: 14px;
+                            display: inline-block;
+                        }
+                        li:nth-child(even) {
+                            margin-left: 50px;
+                        }
+                    }
+                }
+            }
+            .sub:nth-child(even){
+                margin-left: 30px;
+            }
+        }
+        .firstcon{
+            display: block;
+        }
+    }
+}

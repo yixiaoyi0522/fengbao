@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="icon" href="img/favicon.png" />-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/common.css" />-->
+		<style type="text/css">
+			header {
+				height: 40px;
+				background: #2d2d2d;
+				font-size: 14px;
+				color: #fefefe;
+				overflow: hidden;
+			}
+			
+			header a {
+				color: #FEFEFE;
+			}
+			
+			header .head {
+				max-width: 1200px;
+				margin: auto;
+				line-height: 40px;
+			}
+			
+			header .head .left {
+				float: left;
+			}
+			
+			header .head .right {
+				float: right;
+			}
+			
+			header .head .right a {
+				margin-left: 40px;
+			}
+			
+			header .head .right .icon_hot {
+				font-style: normal;
+				color: #fe0000;
+			}
+			
+			header .head .right i {
+				padding-top: 10px;
+				overflow: hidden;
+			}
+			
+			header .head .right i img {
+				position: relative;
+				top: 5px;
+				overflow: hidden;
+			}
+			
+			nav {
+				height: 80px;
+				overflow: hidden;
+				color: #333;
+				font-size: 17px;
+			}
+			
+			nav .box {
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+			
+			nav .box .logo,
+			nav .box .menuList {
+				float: left;
+			}
+			
+			nav .box .logo {
+				margin-top: 10px;
+			}
+			
+			nav .box .menuList {
+				margin-left: 50px;
+			}
+			
+			nav .box .menuList ul {
+				margin: 0;
+				padding: 0;
+			}
+			
+			nav .box .menuList ul li {
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				line-height: 80px;
+				margin-left: 40px;
+			}
+			
+			nav .box .menuList ul li a:hover {
+				color: #ECAA27;
+			}
+			
+			nav .box .menuList ul li a {
+				line-height: 80px;
+				display: block;
+				color: #333;
+			}
+			
+			nav .box .menuList ul li a.active {
+				color: #ecaa27;
+			}
+			
+			nav .box .userEntrance {
+				float: right;
+				height: auto;
+				background: #ecaa27;
+				border-radius: 20px;
+				margin-top: 20px;
+			}
+			
+			nav .box .userEntrance .lbox {
+				padding: 10px 20px;
+			}
+			
+			nav .box .userEntrance .lbox span {
+				color: #fff;
+			}
+			
+			nav .box .userEntrance .lbox a {
+				color: #fff;
+			}
+			/*-------------*/
+			
+			#register {
+				z-index: 999;
+				display: none;
+				border-radius: 12px;
+				position: fixed;
+				top: 160px;
+				left: 50%;
+				margin-left: -240px;
+				width: 480px;
+				background: #fff;
+				padding-bottom: 50px;
+			}
+			
+			#register .head {
+				border-top-left-radius: 12px;
+				border-top-right-radius: 12px;
+				background: #e8e8e8;
+				height: 60px;
+				line-height: 60px;
+				padding: 0 40px;
+			}
+			
+			#register .head .title {
+				float: left;
+			}
+			
+			#register .head .close {
+				float: right;
+			}
+			
+			#register .body {
+				padding-top: 25px;
+				text-align: center;
+			}
+			
+			#register .body> .title {
+				font-size: 20px;
+			}
+			
+			#register .body> .title span {
+				color: #ff0000;
+			}
+			
+			#register .body> .date {
+				font-size: 16px;
+				margin-top: 15px;
+			}
+			
+			#register .body form {
+				margin-top: 35px;
+			}
+			
+			#register .body form input {
+				width: 400px;
+				height: 52px;
+				border: 1px solid #BFBFBF;
+				border-radius: 8px;
+				margin-bottom: 20px;
+				padding: 0 20px;
+				box-sizing: border-box;
+				color: #666;
+				font-size: 16px;
+				outline: none;
+			}
+			
+			#register .body form .yzmbox {
+				text-align: left;
+				padding: 0 40px;
+			}
+			
+			#register .body form .yzmbox input.yzm {
+				width: 240px;
+			}
+			
+			#register .body form .yzmbox a {
+				float: right;
+				display: block;
+				width: 140px;
+				height: 50px;
+				line-height: 52px;
+				font-size: 18px;
+				overflow: hidden;
+				border: 1px solid #bfbfbf;
+				border-radius: 8px;
+				text-align: center;
+			}
+			
+			#register .body> button {
+				width: 400px;
+				height: 52px;
+				background: #ECAA27;
+				border: none;
+				color: #fff;
+				font-size: 20px;
+				border-radius: 8px;
+			}
+			
+			#login {
+				z-index: 999;
+				display: none;
+				border-radius: 12px;
+				position: fixed;
+				top: 160px;
+				left: 50%;
+				margin-left: -240px;
+				width: 480px;
+				background: #fff;
+				padding-bottom: 50px;
+			}
+			
+			#login .head {
+				border-top-left-radius: 12px;
+				border-top-right-radius: 12px;
+				background: #e8e8e8;
+				height: 60px;
+				line-height: 60px;
+				padding: 0 40px;
+			}
+			
+			#login .head .title {
+				float: left;
+			}
+			
+			#login .head .close {
+				float: right;
+			}
+			
+			#login .body {
+				padding-top: 25px;
+				text-align: center;
+			}
+			
+			#login .body .tab {
+				font-size: 20px;
+			}
+			
+			#login .body .tab span {
+				padding: 0 45px;
+			}
+			
+			#login .body .tab .active {
+				color: #ECAA27;
+			}
+			
+			#login .body form {
+				margin-top: 30px;
+			}
+			
+			#login .body form input {
+				width: 400px;
+				height: 52px;
+				border: 1px solid #BFBFBF;
+				border-radius: 8px;
+				margin-bottom: 20px;
+				padding: 0 20px;
+				box-sizing: border-box;
+				color: #666;
+				font-size: 16px;
+				outline: none;
+			}
+			
+			#login .body form .yzmbox {
+				text-align: left;
+				padding: 0 40px;
+			}
+			
+			#login .body form .yzmbox input.yzm {
+				width: 240px;
+			}
+			
+			#login .body form .yzmbox a {
+				float: right;
+				display: block;
+				width: 140px;
+				height: 50px;
+				line-height: 52px;
+				font-size: 18px;
+				overflow: hidden;
+				border: 1px solid #bfbfbf;
+				border-radius: 8px;
+				text-align: center;
+			}
+			
+			#login .body form.common {
+				display: none;
+			}
+			
+			#login .body .remember {
+				text-align: left;
+				padding-left: 40px;
+				margin-bottom: 40px;
+			}
+			
+			#login .body> button {
+				width: 400px;
+				height: 52px;
+				background: #ECAA27;
+				border: none;
+				color: #fff;
+				font-size: 20px;
+				border-radius: 8px;
+			}
+			
+			#login .body .bottom {
+				margin-top: 18px;
+				padding: 0 40px;
+				font-size: 16px;
+			}
+			
+			#login .body .bottom .forget {
+				float: left;
+			}
+			
+			#login .body .bottom .no_register {
+				float: right;
+			}
+			
+			#login .body .bottom .no_register span {
+				color: #FF0000;
+			}
+			/*蒙版*/
+			
+			#mask {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				background: #000;
+				filter: alpha(opacity=50);
+				opacity: 0.5;
+				-moz-opacity: 0.5;
+				z-index: 10;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="head">
+				<div class="left">风暴手机联盟——中国最大的智能手机推广联盟</div>
+
+				<div class="right">
+					<a href="copartner.html" target="_blank">前往合伙人平台</a>
+					<i class="icon_hot">HOT</i>
+					<a href="javascript:void(0);" class="top_tel">
+						<i class="icon_tel"><img src="img/header_phone.png" alt="" /></i>
+						<span>+400-9977-768</span>
+					</a>
+					<a href="javascript:void(0)" target="_blank" class="header_qq">
+						<i class="icon_qq"><img src="img/header_User.png"/></i>
+						<span>800033559</span>
+					</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</header>
+		<nav class="nav">
+			<div class="box">
+				<div class="logo">
+					<a href="http://www.lemeng.net/">
+						<img src="img/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="menuList">
+					<ul class="h-nav NavList">
+						<li>
+							<a href="index.html">首页 </a>
+						</li>
+						<li>
+							<a href="makemoney_mendian.html">如何赚钱</a>
+						</li>
+						<li>
+							<a href="notice.html">风暴新闻 </a>
+						</li>
+						<li>
+							<a href="map.html">会员分布</a>
+						</li>
+						<li>
+							<a href="help_zhushou.html">帮助中心</a>
+						</li>
+						<li>
+							<a href="about.html">关于风暴</a>
+						</li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="userEntrance">
+					<div class="lbox">
+						<a href="javasctipt:void(0)" class="Login">登录</a>
+						<span class="line">|</span>
+						<a href="javasctipt:void(0)" class="Register">注册</a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</nav>
+
+		<!--注册-->
+		<div id="register">
+			<div class="head">
+				<p class="title">注册送现金</p>
+				<p class="close"><img src="img/close.png" alt="close" /></p>
+				<div class="clearfix"></div>
+			</div>
+			<div class="body">
+				<p class="title">新用户注册<span>立送十元</span></p>
+				<p class="date">活动日期：10月1日-10月30日</p>
+
+				<form action="" method="post">
+
+					<div>
+						<input type="text" name="user" id="user" value="" placeholder="用户名由4-20位数字或字母组成" />
+					</div>
+					<div>
+						<input type="password" name="password" id="password" value="" placeholder="密码由6-20位数字字母组成" />
+					</div>
+					<div>
+						<input type="password" name="password" id="password2" value="" placeholder="再次输入密码" />
+					</div>
+					<div>
+						<input type="text" name="code" id="code" value="" placeholder="请输入邀请码（如果没有，默认为666666）" />
+					</div>
+					<div>
+						<input type="tel" name="tel" id="tel" value="" placeholder="请输入密码手机号" />
+					</div>
+					<div class="yzmbox">
+						<input class="yzm" type="yzm" name="yzm" id="yzm" value="" placeholder="请输入短信验证码" />
+						<a href="javascript: void(0)">发送验证码</a>
+					</div>
+
+				</form>
+				<button>立即登录</button>
+			</div>
+
+		</div>
+
+		<!--登录-->
+		<div id="login">
+			<div class="head">
+				<p class="title">登录风暴</p>
+				<p class="close"><img src="img/close.png" alt="close" /></p>
+				<div class="clearfix"></div>
+			</div>
+			<div class="body">
+
+				<div class="tab">
+					<span class="phone_tab active">手机号登录</span>|
+					<span class="common_tab">普通登录</span>
+				</div>
+				<form class="phone" action="" method="post">
+
+					<div>
+						<input type="text" name="user" id="user" value="" placeholder="请输入手机号码或用户名" />
+					</div>
+					<div class="yzmbox">
+						<input class="yzm" type="yzm" name="yzm" id="yzm" value="" placeholder="请输入短信验证码" />
+						<a href="javascript: void(0)">发送验证码</a>
+					</div>
+
+				</form>
+				<form class="common" action="" method="post">
+
+					<div>
+						<input type="text" name="user" id="user" value="" placeholder="请输入手机号码或用户名" />
+					</div>
+					<div>
+						<input type="password" name="password" id="password" value="" placeholder="请输入密码" />
+					</div>
+
+				</form>
+
+				<div class="remember">
+					<input type="checkbox" /><span>记住手机号</span>
+				</div>
+				<button>立即登录</button>
+				<div class="bottom">
+					<p class="forget">忘记密码？</p>
+					<p class="no_register">没有账号？<span id="l_register">立即注册</span></p>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div id="mask"></div>
+
+	</body>
+
+	<script type="text/javascript">
+		$('.close').click(function() {
+				$('#mask').hide();
+			})
+			//注册
+		$('.userEntrance .Register').click(function() {
+
+			$('#mask').show();
+			$('#login').hide();
+			$('#register').show();
+			$('#register .close').click(function() {
+				$('#register').hide();
+				$('#mask').hide();
+			})
+		})
+
+		//登录
+		$('.userEntrance .Login').click(function() {
+			$('#mask').show();
+			$('#register').hide();
+			$('#login').show();
+			$('#login .tab span').click(function() {
+				var n = $(this).index();
+				$(this).siblings().removeClass('active').end().addClass('active');
+				$('#login form').hide();
+				$('#login form').eq(n).show();
+
+			});
+			$('#login .close').click(function() {
+				$('#login').hide();
+				$('#mask').hide();
+			});
+			$('.forget').click(function() {
+
+				window.location.href = 'findPassword.html'
+
+			});
+			$('#l_register').click(function() {
+				$('#login').hide();
+				$('#register').show();
+				$('#register .close').click(function() {
+					$('#register').hide();
+				})
+			})
+		})
+	</script>
+
+</html>

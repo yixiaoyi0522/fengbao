@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html ng-app="fbApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>如何赚钱-门店维修</title>
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/mm_mendian.css" />
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="controller/fbController.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body ng-controller="fbCtrl">
+		<div ng-include="urltop"></div>
+
+		<section class="section1" style="border: none;">
+			<a href="javascript:void(0)"><img style="width: 100%;height: auto;" src="img/mendian_banner.jpg" alt="" /></a>
+		</section>
+		<section class="section2">
+			<div class="box">
+				<a href="makemoney_mendian.html" class="sub active">
+					<p class="title">门店/维修</p>
+					<p>牢牢把握属于自己的收益</p>
+				</a>
+				<a href="makemoney_pifa.html" class="sub">
+					<p class="title">批发/刷机</p>
+					<p>为您带来全网最高收益</p>
+				</a>
+				<a href="copartner.html" class="sub">
+					<p class="title">推广者</p>
+					<p>共同创业，联手掘金</p>
+				</a>
+			</div>
+		</section>
+
+		<!--痛点-->
+		<section class="section3">
+			<div class="box">
+				<div class="text">
+					<h2>手机线下</h2>
+					<h2>销售行业痛点</h2>
+					<p>手机线下销售行业痛点，该如何解决？风暴来帮您</p>
+				</div>
+				<div class="img">
+					<img src="img/mendian_tongdian.png" alt="/" />
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		<!--安装软件-->
+		<section class="section4">
+
+			<div class="box">
+				<h2>现在开始，手机安装软件也能赚钱了</h2>
+				<p>风暴为您提供全网最简捷、最高效手机变现方案，量大用户或贴膜等场景用户可使用独家研发的风暴</p>
+				<p>装机盒子，脱离电脑也能自由推广</p>
+				<div class="img">
+					<div class="sub">
+						<img src="img/mendian_huiyuan.png" alt="" />
+						<p>快速注册会员</p>
+						<p>加入风暴开始赚钱</p>
+					</div>
+					<div class="sub sub2">
+						<img style="position: relative; top: 25px;" src="img/mendian_download.png" alt="" />
+						<p style="position: relative;top: 25px;">下载风暴装机助手</p>
+						<p style="position: relative;top: 25px;">（或使用装机盒子）</p>
+						<p style="position: relative;top: 25px;">全自动安装软件</p>
+					</div>
+					<div class="sub sub2">
+						<img src="img/mendian_shouyi.png" alt="" />
+						<p>收益快速到账</p>
+						<p>登录即可查看收益</p>
+					</div>
+					<div class="sub sub2">
+						<img src="img/mendian_tixian.png" alt="" />
+						<p>支付宝直接提现</p>
+						<p>准时发放每月收益</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!--高额回报-->
+		<section class="section5">
+			<div class="box">
+				<h2>高额回报，每部手机最高可赚20元以上</h2>
+				<p>风暴郑重承诺：所有推广软件，均为官方正版的常用软件，大部分为知名上市互联网公司旗下产品，经</p>
+				<p>由风暴严格测试，绝无任何扣费等影响用户体验的行为，请放心推广。</p>
+				<div class="sub">
+					<div class="left">
+						<p>如果您每天销售3部</p>
+						<p>手机，每年可获得3万元收益</p>
+					</div>
+					<div class="center">
+						<p>如果您每天销售10</p>
+						<p>部手机，每年将净赚一部轿车</p>
+					</div>
+					<div class="right">
+						<p>如果您每天销售50</p>
+						<p>部手机，每年能买下一套房子</p>
+					</div>
+					<div class="line leftLine"></div>
+					<div class="line centerLine"></div>
+					<div class="line rightLine"></div>
+				</div>
+			</div>
+		</section>
+
+		<!--温馨提示-->
+		<section class="section6">
+			<div class="box">
+				<h2>温馨提示</h2>
+				<div class="line"></div>
+				<p>聪明的您可能已经注意到，您原本销售的手机中多半已经安装了不少软件，</p>
+				<p>而这些软件正是您的供货方已经敏锐地觉察到软件安装市场，并通过您销售的手机在赚钱，</p>
+				<p>他们赚走了属于您的车和房！</p>
+				<p>那您还等什么，属于自己的收益应当牢牢把握，加入风暴，现在就开始！</p>
+				<a class="join" href="javascript:viod(0)">立刻加入</a>
+			</div>
+		</section>
+
+		<div ng-include="urlfooter"></div>
+	</body>
+	<script type="text/javascript">
+		$('.section1 a').click(function() {
+			join_click();
+		})
+		$('.join').click(function(){
+			join_click();
+			$(document).scrollTop(40);
+		})
+
+		var join_click = function() {
+			$('#mask').show();
+			$('#login').hide();
+			$('#register').show();
+			$('#register .close').click(function() {
+				$('#register').hide();
+			})
+
+		}
+		$('.close').click(function() {
+			$('#mask').hide();
+		})
+	</script>
+
+</html>
